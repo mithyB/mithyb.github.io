@@ -1,0 +1,15 @@
+canvas {
+	cursor: crosshair;
+}
+
+table {
+	margin: 10px auto;
+	border: 1px solid #55a9ff;
+	text-align: left;
+	padding: 10px;
+	width: auto;
+}
+
+td {
+	padding: 3px;
+}

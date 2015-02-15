@@ -1,0 +1,146 @@
+/* ***** TILE ***** */
+div.tile {
+	margin: 2px auto;
+	width: 120px;
+	text-align: left;
+	padding: 3px;
+	background: black;
+	display: inline-block;
+}
+
+div.tile:hover .desc {
+	display: inline;
+}
+
+div.tile .title {
+	text-decoration: none;
+	color: white;
+	margin: 0;
+	line-height: 1em;
+	white-space: nowrap;
+}
+
+div.tile .desc {
+	font-size: 0.75em;
+	margin: 60px 0 0 0;
+	position: absolute;
+	height: 56px;
+	width: 116px;
+	background: black;
+	opacity: .7;
+	color: white;
+	padding: 2px;
+	/*display: none;*/
+}
+
+div.tile .thumbnail {
+	height: 120px;
+	width: 120px;
+	background: white;
+}
+
+/* ***** RECTANGLE ***** */
+div.rect {
+	margin: 2px auto;
+	width: 360px;
+	text-align: left;
+	padding: 3px;
+	background: black;
+	display: inline-block;
+}
+
+div.rect:hover .desc {
+	display: inline;
+}
+
+div.rect .title {
+	text-decoration: none;
+	color: white;
+	margin: 0;
+	line-height: 1em;
+	white-space: nowrap;
+}
+
+div.rect .desc {
+	font-size: 0.75em;
+	margin: 0 0 0 240px;
+	position: absolute;
+	height: 116px;
+	width: 166px;
+	background: black;
+	opacity: .7;
+	color: white;
+	padding: 2px;
+	/*display: none;*/
+}
+
+div.rect .thumbnail {
+	height: 120px;
+	width: 360px;
+	background: white;
+}
+
+/* ***** DETAIL ***** */
+div.detail {
+	width: 100%;
+	text-align: left;
+	padding: 3px 0 0 3px;
+	display: inline-block;	
+    -webkit-transition: all 0.3s; /* Chrome und Safari Konfiguration */
+    -moz-transition: all 0.3s; /* Firefox-Konfiguration */
+    -o-transition: all 0.3s; /* Opera-Konfiguration */
+    transition: all 0.3s; /* IE-Konfiguration */
+}
+
+div.detail:hover {
+	background: lightgray;
+}
+
+div.detail .title {
+	text-decoration: none;
+	color: black;
+	margin: -65px 0 0 70px;
+	line-height: 1em;
+	position: absolute;
+}
+
+div.detail .desc {
+	font-size: 0.75em;
+	margin: 1.5em 0 0 70px;
+	position: absolute;
+	color: gray;
+}
+
+
+div.detail .thumbnail {
+	height: 60px;
+	width: 60px;
+}
+
+/* ***** ITEM ***** */
+div.item {
+	width: 100%;
+	text-align: left;
+	padding: 3px 0 0 3px;
+	display: inline-block;
+}
+
+div.item .title {
+	color: black;
+	line-height: 1em;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+
+div.item .desc {
+	font-size: 0.75em;
+	margin-top: 0;
+	color: gray;
+}
+
+div.item .thumbnail {
+	margin: 0 5px 0 0;
+	float: left;
+	height: 60px;
+	width: 60px;
+}

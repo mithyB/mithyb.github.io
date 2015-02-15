@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+}
+
+html {
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+body {
+	position: relative;
+	height: 100%;
+}
+
+noscript {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+form {
+	width: 100%;
+}
+
+.css-bar {
+	text-align: center;
+	font-size: .75em;
+}
+
+.bottom-bar {
+	text-align: center;
+	font-size: .75em;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.container {
+	display: table;
+	width: 100%;
+}
+
+.stretch, .right, .left {
+	display: table-cell;
+	vertical-align: middle;
+	width: auto;
+}
+
+.stretch {
+	width: 100%;
+	padding: 0 20px 0 0;
+}
+
+.stretch input {
+	width: 100%;
+}
+
+.right {
+	white-space: nowrap;
+}
+
+.bottom {	
+	position: absolute;
+	bottom: 0;
+}
+
+.middle {
+	position: absolute;
+	top: 0px;
+	bottom: 40px;
+	overflow: auto;
+	padding: 5px;
+	left: 0;
+	right: 0;
+}
+
+.center {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+}
+
+.width-80 {	
+	/*width: 80px;*/
+}

@@ -1,0 +1,47 @@
+/* HOVER - SLIDE IN */
+
+.imageBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.imageBox .slideIn-bottom {
+    bottom: -100%; /* Startposition */  
+    -webkit-transition: all 0.3s; /* Chrome und Safari Konfiguration */
+    -moz-transition: all 0.3s; /* Firefox-Konfiguration */
+    -o-transition: all 0.3s; /* Opera-Konfiguration */
+    transition: all 0.3s; /* IE-Konfiguration */
+}
+.imageBox:hover .slideIn-bottom{
+    bottom: 0; /* Endposition (hier: da Startposition -40px ist soll am Schluss 0px ist) */
+}
+.imageBox .slideIn-left {
+    left: -100%; /* Startposition */
+    -webkit-transition: all 0.3s; /* Chrome und Safari Konfiguration */
+    -moz-transition: all 0.3s; /* Firefox-Konfiguration */
+    -o-transition: all 0.3s; /* Opera-Konfiguration */
+    transition: all 0.3s; /* IE-Konfiguration */
+}
+.imageBox:hover .slideIn-left{
+    left: 0; /* Endposition (hier: da Startposition -40px ist soll am Schluss 0px ist) */
+}
+.imageBox .slideIn-top {
+    top: -100%; /* Startposition */
+    -webkit-transition: all 0.3s; /* Chrome und Safari Konfiguration */
+    -moz-transition: all 0.3s; /* Firefox-Konfiguration */
+    -o-transition: all 0.3s; /* Opera-Konfiguration */
+    transition: all 0.3s; /* IE-Konfiguration */
+}
+.imageBox:hover .slideIn-top{
+    top: 0; /* Endposition (hier: da Startposition -40px ist soll am Schluss 0px ist) */
+}
+.imageBox .slideIn-right {	
+    right: -100%; /* Startposition */
+    -webkit-transition: all 0.3s; /* Chrome und Safari Konfiguration */
+    -moz-transition: all 0.3s; /* Firefox-Konfiguration */
+    -o-transition: all 0.3s; /* Opera-Konfiguration */
+    transition: all 0.3s; /* IE-Konfiguration */
+}
+.imageBox:hover .slideIn-right{
+    right: 0; /* Endposition (hier: da Startposition -40px ist soll am Schluss 0px ist) */
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="michael, buholzer" />
+		<meta name="description" content="Gaming" />
+		<title>Gaming | Michael Buholzer</title>
+		
+		<link rel="shortcut icon" href="../../favicon.ico" />
+		<!--<link rel="stylesheet" type="text/css" href="/michaelbuholzer/css/bootstrap.css" />-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/view.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/slide.css" />
+		
+		<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../js/angular.min.js"></script>
+		<script type="text/javascript" src="../../js/controllers.js"></script>
+		<script type="text/javascript" src="../../js/script.js"></script>
+	</head>
+	<body data-ng-controller="gaming">
+		<div id="wrapper">			
+		
+			<header data-ng-include="'../../html_parts/header.html'">
+			</header>
+			
+			<div id="content">
+			
+				<div>
+					<h2>News</h2>
+					<div class="text">
+						<div data-ng-repeat="news in gamingNews" class="item">
+							<p class="title">{{news.title}}<span class="desc" style="float:right">{{news.date}}</span></p>
+							<img class="thumbnail" src="#" data-ng-src="{{news.img}}" alt="thumbnail" />
+							<p class="desc">{{news.desc}} <a data-ng-href="{{news.url}}">More...</a> <span class="desc">({{news.url_desc}})</span></p>							
+						</div>
+					</div>
+					<h2>Recommended Games Of The Month</h2>
+					<p>{{text}}</p>
+					<div class="center middle">
+						<a data-ng-repeat="game in games" class="nodeco" data-ng-href="{{game.url}}">
+							<div class="rect">
+								<div class="imageBox">
+									<div class="desc slideIn-right">{{game.desc}}</div>
+									<img class="thumbnail" src="#" data-ng-src="{{game.img}}" alt="thumbnail" />
+								</div>
+								<span class="title">{{game.title}}</span><span class="rating">{{game.rating}}</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+			</div>
+			
+			<footer data-ng-include="'../../html_parts/footer.html'">
+			</footer>
+			
+		</div>
+		<noscript>This page requires JavaScript. Please allow your browser to run it.</noscript>
+	</body>
+</html>

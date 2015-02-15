@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="michael, buholzer, downloads" />
+		<meta name="description" content="Downloads" />
+		<title>Downloads | Michael Buholzer</title>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--<link rel="stylesheet" type="text/css" href="/michaelbuholzer/css/bootstrap.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/view.css" />
+		<link rel="stylesheet" type="text/css" href="css/slide.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body data-ng-controller="home">
+		<div id="wrapper">			
+		
+			<header data-ng-include="'html_parts/header.html'">
+			</header>
+			
+			<div id="content">
+			
+				<div class="text" data-ng-controller="downloads">
+					<h2>Downloads</h2>
+					<p>
+						All downloads on one page:
+					</p>
+					<div data-ng-repeat="download in downloads">
+						<h3>{{download.name}}</h3>
+						<table>
+							<tr data-ng-repeat="item in download.items">
+								<td class="{{item.highlighted ? 'highlighted' : ''}}" >{{item.title}}<br /><span class="projDesc">{{item.desc}}</span></td>
+								<td class="b_2"><a class="button" data-ng-href="{{item.dllink}}">Download ({{item.size}})</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			
+			</div>
+			
+			<footer data-ng-include="'html_parts/footer.html'">
+			</footer>
+			
+		</div>
+		<noscript>This page requires JavaScript. Please allow your browser to run it.</noscript>
+	</body>
+</html>

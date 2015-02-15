@@ -1,0 +1,79 @@
+html, body {
+	font-family: 'Press Start 2P', cursive;
+	color: #fff;
+	background: #000;
+}
+
+html {	
+	margin: 10px;
+}
+
+noscript {
+	background: #000;
+}
+
+button {
+	background: transparent;
+	border: 1px solid #fff;
+	padding: 6px;
+	color: #fff;
+	font-family: 'Press Start 2P', cursive;
+}
+
+button:hover {
+	border: 1px solid #0f0;
+}
+
+button:active {
+	color: #000;
+	background: #fff;
+	border: 0px none #000;
+}
+
+button:disabled {
+	border: 1px solid #f00;
+	color: #aaa;
+}
+
+input[type="text"] {
+	border: 0 none transparent;
+	border-bottom: 1px solid #fff;
+	padding: 6px;
+	outline: none;
+	font-family: 'Press Start 2P', cursive;
+	color: #fff;
+	background: #000;
+}
+
+input[type="text"]:focus {
+	border-bottom: 1px solid #0f0;
+}
+
+.inputPrefix:after {
+	content: ">";
+}
+
+em {
+	font-style: normal;
+	color: #0f0;
+}
+
+.middle {
+	/*background: #eee;*/
+}
+
+.timestamp:before {
+	content: "["
+}
+
+.timestamp:after {
+	content: "]"
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul > li:before {
+	content: "\00B7";
+}

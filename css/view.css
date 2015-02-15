@@ -1,0 +1,144 @@
+/* ***** TILE ***** */
+div.tile {
+	background: #ccc;
+	text-align: left;
+	display: inline-block;
+	margin: 5px;
+}
+
+div.tile .title {
+	text-decoration: none;
+	margin: 0;
+	color: #555;
+	line-height: 1em;
+	white-space: nowrap;
+	padding: 3px;
+}
+
+div.tile .desc {
+	font-size: 0.75em;
+	margin: 0;
+	position: absolute;
+	height: 50%;
+	width: 100%;
+	background: black;
+	opacity: .8;
+	color: white;
+	padding: 2px;
+}
+
+div.tile .thumbnail {
+	height: 120px;
+	width: 120px;
+	background: white;
+	display: block;
+}
+
+/* ***** RECTANGLE ***** */
+div.rect {
+	background: #ccc;
+	text-align: left;
+	display: inline-block;
+	margin: 5px;
+}
+
+div.rect .title {
+	text-decoration: none;
+	margin: 0;
+	color: #555;
+	line-height: 1em;
+	white-space: nowrap;
+	padding: 3px;
+}
+
+div.rect .rating {
+	text-decoration: none;
+	margin: 0;
+	color: #555;
+	line-height: 1em;
+	white-space: nowrap;
+	padding: 3px;
+	float: right;
+}
+
+div.rect .desc {
+	font-size: 0.75em;
+	margin: 0;
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	background: black;
+	opacity: .8;
+	color: white;
+	padding: 2px;
+}
+
+div.rect .thumbnail {
+	height: 120px;
+	width: 360px;
+	background: white;
+	display: block;
+}
+
+/* ***** DETAIL ***** */
+div.detail {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	display: inline-block;
+	margin: 3px;
+}
+
+div.detail:hover {
+	background: #ddd;;
+}
+
+div.detail .title {
+	text-decoration: none;
+	color: black;
+	line-height: 1em;
+	margin: 5px 0 5px 0; 
+}
+
+div.detail .desc {
+	font-size: 0.75em;
+	color: gray;
+	margin: 0;
+}
+
+
+div.detail .thumbnail {
+	height: 60px;
+	width: 60px;
+	float: left;
+	display: block;
+	margin: 3px 7px 3px 3px;
+}
+
+/* ***** ITEM ***** */
+div.item {
+	width: 100%;
+	text-align: left;
+	/*padding: 3px 0 0 3px;*/
+	display: inline-block;
+}
+
+div.item .title {
+	color: black;
+	line-height: 1em;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+
+div.item .desc {
+	font-size: 0.75em;
+	margin-top: 0;
+	color: gray;
+}
+
+div.item .thumbnail {
+	margin: 0 5px 0 0;
+	float: left;
+	height: 60px;
+	width: 60px;
+}

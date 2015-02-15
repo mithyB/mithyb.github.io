@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="michael, buholzer, programming, raycasting" />
+		<meta name="description" content="Raycasting 2" />
+		<title>Programming | Michael Buholzer</title>
+		
+		<link rel="shortcut icon" href="../../../favicon.ico" />
+		<!--<link rel="stylesheet" type="text/css" href="/michaelbuholzer/css/bootstrap.css" />-->
+		<link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/view.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/slide.css" />
+		<link rel="stylesheet" type="text/css" href="../../../t/programming/style.css" />
+		
+		<script type="text/javascript" src="../../../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/angular.min.js"></script>
+		<script type="text/javascript" src="../../../js/controllers.js"></script>
+		<script type="text/javascript" src="../../../js/script.js"></script>
+	</head>
+	<body data-ng-controller="programming">
+		<div id="wrapper">			
+		
+			<header data-ng-include="'../../../html_parts/header.html'">
+			</header>
+			
+			<div id="content">
+			
+				<h2>Raycasting 2</h2>
+				<script type="text/javascript">
+					var canvas = document.createElement('canvas');
+					canvas.id = 'canvas';
+					canvas.width = 320;
+					canvas.height = 200;
+					var div = document.getElementById('content');
+					div.appendChild(canvas);
+					var ctx = canvas.getContext('2d');
+				</script>
+				<div style="display:none;">
+					<img id="wall" src="images/wall.png" alt="wall" />
+					<img id="floor" src="images/floor.png" alt="floor" />
+					<img id="test" src="images/test.png" alt="test" />
+				</div>
+				<script type="text/javascript" src="raycasting.js"></script>
+				<script type="text/javascript" src="main.js"></script>
+				<form id="inputs">
+					<div>
+						<h3>Settings</h3>
+						<table>
+							<tr>
+								<th>Name</th><th>Value</th>
+							</tr>
+							<tr>
+								<td><label for="pixelSize">Pixel Size:</label></td>
+								<td><input type="number" id="pixelSize" value="4" /></td>
+							</tr>
+							<tr>
+								<td><label for="floorEnabled">Floor:</label></td>
+								<td><input type="checkbox" id="floorEnabled" checked="checked" /></td>
+							</tr>
+							<tr>
+								<td><label for="textureEnabled">Textures:</label></td>
+								<td><input type="checkbox" id="textureEnabled" checked="checked" /></td>
+							</tr>
+						</table>
+					</div>			
+					<div>
+						<a class="button" onclick="applyInput()">Apply</a>
+					</div>
+				</form>	
+				<div>
+					<h3>How to</h3>
+					<div class="text">
+						<ul>
+							<li>Press W to move forward</li>
+							<li>Press A to move left</li>
+							<li>Press S to move backward</li>
+							<li>Press D to move right</li>
+							<li>Use the left and right arrow keys to turn around</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			
+			<footer data-ng-include="'../../../html_parts/footer.html'">
+			</footer>
+			
+		</div>
+		<noscript>This page requires JavaScript. Please allow your browser to run it.</noscript>
+	</body>
+</html>

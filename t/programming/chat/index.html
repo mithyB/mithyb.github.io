@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+		</noscript>
+		
+		<title>Chat</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" type="image/ico" href="../../../favicon.ico" />
+		
+		<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+		<!--<link rel="stylesheet" type="text/css" href="css/style_cmd.css">-->
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>		
+	</head>
+	<body>
+		<form>
+			<div id="loginView">
+				<div class="css-bar">
+					<a href="#" onclick="window.location.reload()">Default</a>
+					<a href="#cmd" onclick="window.location.reload()">Retro</a>
+					<a href="#ms" onclick="window.location.reload()">Microsoft</a>
+					<a href="#nocss" onclick="window.location.reload()">without CSS</a>
+				</div>
+				<div class="center">
+					Username: <span class="inputPrefix"></span>
+					<input autocomplete="off" autofocus id="userInput" type="text" onkeypress="onKeyDown(13, event, 'loginButton')" />
+					<button id="loginButton" class="width-80" disabled type="button" onclick="connect()">Connect</button>				
+				</div>				
+				<div class="bottom-bar">
+					<a href="../../../_downloads/wss.exe">Download server software</a>
+					<a href="?cs=">Change server IP</a>
+				</div>
+			</div>
+			<div id="chatView">
+				<div class="middle" id="chatLogContainer">
+					<p id="chatLog"></p>
+				</div>
+				<div class="container bottom">
+					<span class="inputPrefix left"></span>
+					<div class="stretch">
+						<input autocomplete="off" id="msgInput" type="text" onkeypress="onKeyDown(13, event, 'sendButton')" />
+					</div>
+					<button id="sendButton" class="right width-80" disabled type="button" onclick="send()">Send</button>
+				</div>
+			</div>
+		</form>
+		<noscript>This site requires <em>JavaScript</em> to run properly.</noscript>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="michael, buholzer, programming, raycasting" />
+		<meta name="description" content="Raycasting 2" />
+		<title>Programming | Michael Buholzer</title>
+		
+		<link rel="shortcut icon" href="../../../favicon.ico" />
+		<!--<link rel="stylesheet" type="text/css" href="/michaelbuholzer/css/bootstrap.css" />-->
+		<link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/view.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/slide.css" />
+		
+		<script type="text/javascript" src="../../../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/angular.min.js"></script>
+		<script type="text/javascript" src="../../../js/controllers.js"></script>
+		<script type="text/javascript" src="../../../js/script.js"></script>
+	</head>
+	<body data-ng-controller="programming">
+		<div id="wrapper">			
+		
+			<header data-ng-include="'../../../html_parts/header.html'">
+			</header>
+			
+			<div id="content">
+			
+				<div>
+					<h3>Download</h3>
+					<table data-ng-controller="downloads">
+						<tr data-ng-repeat="item in downloads_raycasting">
+							<td class="{{item.highlighted ? 'highlighted' : ''}}">{{item.title}}<br /><span class="projDesc">{{item.desc}}</span></td>
+							<td class="b_2"><a class="button" data-ng-href="{{item.dllink}}">Download ({{item.size}})</a></td>
+						</tr>
+					</table>
+				</div>
+			
+			</div>
+			
+			<footer data-ng-include="'../../../html_parts/footer.html'">
+			</footer>
+			
+		</div>
+		<noscript>This page requires JavaScript. Please allow your browser to run it.</noscript>
+	</body>
+</html>

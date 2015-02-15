@@ -1,0 +1,25 @@
+[	 
+	{"title": "A new Hearthstone adventure",
+	 "desc": "A new hearthstone adventure is on its way with the Gnomes vs. Goblins. Developers have already revealed some of the new cards. Players can vote on next cards to be revealed.",
+	 "url": "http://battle.net/hearthstone/",
+	 "img": "images/hearthstonethumb.jpg",
+	 "date": "28.11.2014"},
+	 
+	{"title": "Grand Theft Auto V first person mode announced",
+	 "desc": "After about a year from releasing Grand Theft Auto V to the PlayStation 3 and the XBOX 360 the release for GTA V on the PlayStation 4 and XBOX One is about to happen. Rockstar showed one of the new features in this next-gen GTA: First person mode.",
+	 "url": "http://rockstargames.com/",
+	 "img": "images/gta5thumb.jpg",
+	 "date": "28.11.2014"},
+	 
+	{"title": "Final Stand released",
+	 "desc": "The fifth and last add-on for Battlefield 4 has just been released after over a year. The new add-on features new assignments, weapons, vehicles and 4 maps. As awlays, premium members get 2 weeks early access to play on the new battlefields.",
+	 "url": "http://www.battlefield.com/en/battlefield-4/expansion-packs/final-stand",
+	 "img": "images/bf4thumb.jpg",
+	 "date": "28.11.2014"},
+	 
+	{"title": "Super Smash Bros for WiiU feature revealed",
+	 "desc": "After a few months from the release of Super Smash Bros for 3DS the WiiU release is neigh. Not only does SSB look better on the WiiU thanks to its good hardware it also comes with an all new game mode where 8 players can play simultaniously.",
+	 "url": "http://smashbros.com/en",
+	 "img": "images/ssbthumb.jpg",
+	 "date": "28.11.2014"}
+]

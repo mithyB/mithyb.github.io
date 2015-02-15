@@ -1,0 +1,69 @@
+html, body {
+	font-family: Quicksand;
+	font-weight: 500;
+}
+
+html {	
+	margin: 10px;
+}
+
+noscript {
+	background: #fff;
+}
+
+button {
+	background: -webkit-linear-gradient(#fff, #ccc);
+	background: -o-linear-gradient(#fff, #ccc);
+	background: -moz-linear-gradient(#fff, #ccc);
+	background: linear-gradient(#fff, #ccc);
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	padding: 6px;
+	font-family: Quicksand;
+	font-weight: 500;
+}
+
+button:hover {
+	background: -webkit-linear-gradient(#eee, #ccc);
+	background: -o-linear-gradient(#eee, #ccc);
+	background: -moz-linear-gradient(#eee, #ccc);
+	background: linear-gradient(#eee, #ccc);
+}
+
+button:active {
+	background: -webkit-linear-gradient(#ccc, #fff);
+	background: -o-linear-gradient(#ccc, #fff);
+	background: -moz-linear-gradient(#ccc, #fff);
+	background: linear-gradient(#ccc, #fff);
+}
+
+input[type="text"] {
+	border: 0px none transparent;
+	border-bottom: 1px solid #aaa;
+	padding: 6px;
+	outline: none;
+	font-family: Quicksand;
+	font-weight: 500;
+}
+
+input[type="text"]:focus {
+	border-bottom: 1px solid #000;
+}
+
+em {
+	font-style: normal;
+}
+
+.line {
+	border-bottom: 1px dotted #aaa;
+}
+
+.middle {
+	box-shadow: 0px 10px 30px #aaa inset;
+	border-radius: 10px;
+	background: #eee;
+}
+
+.timestamp {
+	color: #aaa;
+}

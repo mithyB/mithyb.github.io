@@ -1,0 +1,22 @@
+{
+	"text": "December's recommended games are Assassin's Creed Unity, Far Cry 4 and The Crew. These Ubisoft titles are all part of the NVIDIA promotion where you get one of them for free by ordering a GTX 970 or GTX 980.",
+	"games": [
+		{"title": "Assassin's Creed Unity",
+		 "desc": "The next game in the series is now released. Assassin's Creed Unity sets in revolutionary France where you play as Arno Victor Dorian.",
+		 "url": "http://assassinscreed.ubi.com/",
+		 "img": "images/acunity.jpg",
+		 "rating": "★★★★★"},
+		 
+		{"title": "Far Cry 4",
+		 "desc": "This first-person shooter is set in Kyrat, Nepal and scores with its stunning graphics. There is also a CO-OP mode.",
+		 "url": "http://far-cry.ubi.com/",
+		 "img": "images/farcry4.jpg",
+		 "rating": "★★★★★"},
+		 
+		{"title": "The Crew",
+		 "desc": "The Crew is a car themed MMO game set in the USA. If you ever wanted to drive from L.A. to New York in a game, this is for you.",
+		 "url": "http://thecrew-game.ubi.com/",
+		 "img": "images/thecrew.jpg",
+		 "rating": "★★★★☆"}
+	]
+}
