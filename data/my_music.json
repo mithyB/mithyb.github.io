@@ -1,122 +1,122 @@
 [ {
 	"title": "A Little BiT Of Epicness",
 	"cover": "images/music.jpg",
-	"source": "mymusic/A Little BiT Of Epicness - mithyB.mp3"
+	"source": "data/my_music/A Little BiT Of Epicness - mithyB.mp3"
 	}, {
 	"title": "Backstep",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Backstep - mithyB.mp3"
+	"source": "data/mymusic/Backstep - mithyB.mp3"
 	}, {
 	"title": "Dark Cloud",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Dark Cloud - mithyB.mp3"
+	"source": "data/my_music/Dark Cloud - mithyB.mp3"
 	}, {
 	"title": "Deep Blue",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Deep Blue - mithyB.mp3"
+	"source": "data/my_music/Deep Blue - mithyB.mp3"
 	}, {
 	"title": "Disco Universe",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Disco Universe - mithyB.mp3"
+	"source": "data/my_music/Disco Universe - mithyB.mp3"
 	}, {
 	"title": "Dreams",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Dreams - mithyB.mp3"
+	"source": "data/mymusic/Dreams - mithyB.mp3"
 	}, {
 	"title": "Drum 'n' Bass",
 	"cover": "images/music.jpg",
-	"source": "mymusic/drumnbass.mp3"
+	"source": "data/mymusic/drumnbass.mp3"
 	}, {
 	"title": "Fast Travel",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Fast Travel - mithyB.mp3"
+	"source": "data/mymusic/Fast Travel - mithyB.mp3"
 	}, {
 	"title": "Femme",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Femme - mithyB.mp3"
+	"source": "data/mymusic/Femme - mithyB.mp3"
 	}, {
 	"title": "Ghosts Can Dance",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Ghosts Can Dance - mithyB.mp3"
+	"source": "data/mymusic/Ghosts Can Dance - mithyB.mp3"
 	}, {
 	"title": "Gnome Ville",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Gnome Ville - mithyB.mp3"
+	"source": "data/mymusic/Gnome Ville - mithyB.mp3"
 	}, {
 	"title": "Jungle",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Jungle.mp3"
+	"source": "data/mymusic/Jungle.mp3"
 	}, {
 	"title": "LeMusic",
 	"cover": "images/music.jpg",
-	"source": "mymusic/LeMusic - mithyB.mp3"
+	"source": "data/mymusic/LeMusic - mithyB.mp3"
 	}, {
 	"title": "Looking For It",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Looking For It - mithyB.mp3"
+	"source": "data/mymusic/Looking For It - mithyB.mp3"
 	}, {
 	"title": "Morning",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Morning.mp3"
+	"source": "data/mymusic/Morning.mp3"
 	}, {
 	"title": "On The Track",
 	"cover": "images/music.jpg",
-	"source": "mymusic/On The Track - mithyB.mp3"
+	"source": "data/mymusic/On The Track - mithyB.mp3"
 	}, {
 	"title": "P4R7Y",
 	"cover": "images/music.jpg",
-	"source": "mymusic/P4R7Y - mithyB.mp3"
+	"source": "data/mymusic/P4R7Y - mithyB.mp3"
 	}, {
 	"title": "Pager",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Pager - mithyB.mp3"
+	"source": "data/mymusic/Pager - mithyB.mp3"
 	}, {
 	"title": "Polar Knights",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Polar Knights - mithyB.mp3"
+	"source": "data/mymusic/Polar Knights - mithyB.mp3"
 	}, {
 	"title": "RetRocK",
 	"cover": "images/music.jpg",
-	"source": "mymusic/RetRocK - mithyB.mp3"
+	"source": "data/mymusic/RetRocK - mithyB.mp3"
 	}, {
 	"title": "Riding Sand",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Riding Sand - mithyB.mp3"
+	"source": "data/mymusic/Riding Sand - mithyB.mp3"
 	}, {
 	"title": "RiverCraft",
 	"cover": "images/music.jpg",
-	"source": "mymusic/RiverCraft - mithyB.mp3"
+	"source": "data/mymusic/RiverCraft - mithyB.mp3"
 	}, {
 	"title": "Siren Rythm",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Siren Rythm - mithyB.mp3"
+	"source": "data/mymusic/Siren Rythm - mithyB.mp3"
 	}, {
 	"title": "Snowy Winter Night (Jingle Bells)",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Snowy Winter Night (Jingle Bells) - mithyB.mp3"
+	"source": "data/mymusic/Snowy Winter Night (Jingle Bells) - mithyB.mp3"
 	}, {
 	"title": "Sleep",
 	"cover": "images/music.jpg",
-	"source": "mymusic/spl33p.mp3"
+	"source": "data/mymusic/spl33p.mp3"
 	}, {
 	"title": "Sunday",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Sunday - mithyB.mp3"
+	"source": "data/mymusic/Sunday - mithyB.mp3"
 	}, {
 	"title": "TETRiS",
 	"cover": "images/music.jpg",
-	"source": "mymusic/TETRiS - mithyB.mp3"
+	"source": "data/mymusic/TETRiS - mithyB.mp3"
 	}, {
 	"title": "The Man At The Piano",
 	"cover": "images/music.jpg",
-	"source": "mymusic/The Man At The Piano - mithyB.mp3"
+	"source": "data/mymusic/The Man At The Piano - mithyB.mp3"
 	}, {
 	"title": "Thoughts",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Thoughts - mithyB.mp3"
+	"source": "data/mymusic/Thoughts - mithyB.mp3"
 	}, {
 	"title": "Topscore",
 	"cover": "images/music.jpg",
-	"source": "mymusic/Topscore - mithyB.mp3"
+	"source": "data/mymusic/Topscore - mithyB.mp3"
 	}
 ]
