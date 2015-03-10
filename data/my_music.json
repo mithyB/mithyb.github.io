@@ -25,7 +25,7 @@
 	}, {
 	"title": "Drum 'n' Bass",
 	"cover": "images/music.jpg",
-	"source": "data/mymusic/drumnbass.mp3"
+	"source": "data/mymusic/drumNbass.mp3"
 	}, {
 	"title": "Fast Travel",
 	"cover": "images/music.jpg",
@@ -45,7 +45,7 @@
 	}, {
 	"title": "Jungle",
 	"cover": "images/music.jpg",
-	"source": "data/mymusic/Jungle.mp3"
+	"source": "data/mymusic/jungle.mp3"
 	}, {
 	"title": "LeMusic",
 	"cover": "images/music.jpg",
@@ -57,7 +57,7 @@
 	}, {
 	"title": "Morning",
 	"cover": "images/music.jpg",
-	"source": "data/mymusic/Morning.mp3"
+	"source": "data/mymusic/morning.mp3"
 	}, {
 	"title": "On The Track",
 	"cover": "images/music.jpg",
