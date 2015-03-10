@@ -1,0 +1,62 @@
+<div>
+    <h2>Raycasting 2</h2>
+
+    <div id="playground"></div>
+    <script type="text/javascript">
+        var canvas = document.createElement('canvas');
+        canvas.id = 'canvas';
+        canvas.width = 320;
+        canvas.height = 200;
+        var div = document.getElementById('playground');
+        div.appendChild(canvas);
+        var ctx = canvas.getContext('2d');
+    </script>
+
+    <div style="display:none;">
+        <img id="wall" src="resources/projects/raycasting2/images/wall.png" alt="wall" />
+        <img id="floor" src="resources/projects/raycasting2/images/floor.png" alt="floor" />
+        <img id="test" src="resources/projects/raycasting2/images/test.png" alt="test" />
+    </div>
+
+    <script type="text/javascript" src="resources/projects/raycasting2/raycasting.js"></script>
+    <script type="text/javascript" src="resources/projects/raycasting2/main.js"></script>
+
+    <form id="inputs">
+        <div>
+            <h3>Settings</h3>
+            <table class="settings">
+                <tr>
+                    <th>Name</th><th>Value</th>
+                </tr>
+                <tr>
+                    <td><label for="pixelSize">Pixel Size:</label></td>
+                    <td><input type="number" id="pixelSize" value="3" /></td>
+                </tr>
+                <tr>
+                    <td><label for="floorEnabled">Floor:</label></td>
+                    <td><input type="checkbox" id="floorEnabled" checked="checked" /></td>
+                </tr>
+                <tr>
+                    <td><label for="textureEnabled">Textures:</label></td>
+                    <td><input type="checkbox" id="textureEnabled" checked="checked" /></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <a class="button" onclick="applyInput()">Apply</a>
+        </div>
+    </form>
+    <div>
+        <h3>How to</h3>
+        <div class="text">
+            <ul>
+                <li>Press W to move forward</li>
+                <li>Press A to move left</li>
+                <li>Press S to move backward</li>
+                <li>Press D to move right</li>
+                <li>Use the left and right arrow keys to turn around</li>
+            </ul>
+        </div>
+    </div>
+
+</div>

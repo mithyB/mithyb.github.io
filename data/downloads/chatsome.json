@@ -1,0 +1,30 @@
+{
+    "name": "Chatsome",
+    "items": [
+        {
+            "title": "Chatsome-Mega-Pack",
+            "desc": "Includes all files (Chatsome.zip)",
+            "highlighted": true,
+            "size": "81 KB",
+            "dllink": "downloads/chatsome.zip"
+        },
+        {
+            "title": "Chatsome client",
+            "desc": "Chatsome.exe",
+            "size": "96 KB",
+            "dllink": "downloads/chatsome.exe"
+        },
+        {
+            "title": "Chatsome server",
+            "desc": "Chatsome_server_host.exe",
+            "size": "23 KB",
+            "dllink": "downloads/chatsome_server_host.exe"
+        },
+        {
+            "title": "ConnectionProvider",
+            "desc": "ConnectionProvider.dll",
+            "size": "36 KB",
+            "dllink": "downloads/connectionprovider.dll"
+        }
+    ]
+}

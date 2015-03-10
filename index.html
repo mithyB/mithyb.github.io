@@ -1,59 +1,52 @@
 <!DOCTYPE html>
-<html data-ng-app="app">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="keywords" content="michael, buholzer" />
-		<meta name="description" content="frontpage" />
-		<title>Home | Michael Buholzer</title>
-		
-		<link rel="shortcut icon" href="favicon.ico" />
-		<!--<link rel="stylesheet" type="text/css" href="/michaelbuholzer/css/bootstrap.css" />-->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/view.css" />
-		<link rel="stylesheet" type="text/css" href="css/slide.css" />
-		
-		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="js/angular.min.js"></script>
-		<script type="text/javascript" src="js/controllers.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-	</head>
-	<body data-ng-controller="home">
-		<div id="wrapper">			
-		
-			<header data-ng-include="'html_parts/header.html'">
-			</header>
-			
-			<div id="content">
-				<div>
-					<h2>Introduction</h2>
-					<img class="right" src="images/pic.jpg" alt="coffee" />
-					<div class="text">
-						<p>Hello visitor,</p>
-						<p>
-							Welcome to my webpage. I'm Michael Buholzer, the creator. As you can see I work as a programmer and like to play video games. In the programming topic you can see some of my works and find some good links which might be useful for you. The gaming topic is all about gaming news and game recommendations. <br/><br/>There is also a 'Contact' link at the bottom for giving feedback. Don't be afraid of clicking it :)
-						</p>
-					</div>
-				</div>
-				<div>
-					<h2>Topics</h2>
-					<div class="center" data-ng-controller="topics">
-						<a data-ng-repeat="topic in topics" class="nodeco" data-ng-href="{{topic.url}}">
-							<div class="tile">
-								<div class="imageBox">
-									<div class="desc slideIn-bottom">{{topic.desc}}</div>
-									<img class="thumbnail" src="#" data-ng-src="{{topic.img}}" alt="thumbnail" />
-								</div>
-								<p class="title">{{topic.title}}</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-			
-			<footer data-ng-include="'html_parts/footer.html'">
-			</footer>
-			
-		</div>
-		<noscript>This page requires JavaScript. Please allow your browser to run it.</noscript>
-	</body>
+<html ng-app="app">
+    <head lang="en">
+        <base href="/web/" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Michael Buholzer</title>
+
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
+        <!--<link rel="stylesheet" type="text/css" href="http://bootswatch.com/cosmo/bootstrap.min.css" />-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/slide.css" />
+        <link rel="stylesheet" type="text/css" href="css/view.css" />
+        <link rel="stylesheet" type="text/css" href="audio-player/audio-player.css" />
+    </head>
+    <body>
+        <div ng-include="src='shell/base.html'" class="max-height"></div>
+
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="routes/routes.config.js"></script>
+        <script type="text/javascript" src="routes/routes.js"></script>
+        <script type="text/javascript" src="data/consts.js"></script>
+
+        <script type="text/javascript" src="filters/agoFilter.js"></script>
+        <script type="text/javascript" src="filters/unsafeFilter.js"></script>
+
+        <script type="text/javascript" src="controllers/base.js"></script>
+        <script type="text/javascript" src="controllers/home.js"></script>
+        <script type="text/javascript" src="controllers/programming.js"></script>
+        <script type="text/javascript" src="controllers/gaming.js"></script>
+        <script type="text/javascript" src="controllers/music.js"></script>
+        <script type="text/javascript" src="controllers/project.js"></script>
+        <script type="text/javascript" src="controllers/downloads.js"></script>
+
+        <script type="text/javascript" src="services/dataService.js"></script>
+        <script type="text/javascript" src="services/downloadsService.js"></script>
+
+        <!--<script type="text/javascript" src="filters/unsafeFilter.js"></script>
+        <script type="text/javascript" src="filters/agoFilter.js"></script>-->
+
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="audio-player/audio-player.js"></script>
+    </body>
 </html>

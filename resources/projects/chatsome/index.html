@@ -1,0 +1,56 @@
+<div>
+    <h2>Chatsome</h2>
+    <div class="text">
+        <p>
+            Chatsome is a chat program which allows you to communicate over LAN or even the Internet. With a simple userfriendly interface and lots of functions Chatsome can be used by everyone and everywhere.
+        </p>
+    </div>
+    <div>
+        <h3>Features</h3>
+        <div class="text">
+            <ul>
+                <li>Easy to use</li>
+                <li>Many Twitch.tv emotes are supported</li>
+                <li>Commands (mute, kick, ban ...)</li>
+                <li>Custom messages (join, leave ...)</li>
+                <li>Simple to configurate</li>
+                <li>No installation required</li>
+                <li><b>It's all free!</b></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h3>Download</h3>
+        <table>
+            <tr data-ng-repeat="item in vm.download">
+                <td class="{{item.highlighted ? 'highlighted' : ''}}">{{item.title}}<br /><span class="projDesc">{{item.desc}}</span></td>
+                <td class="b_2"><a class="button" data-ng-href="{{item.dllink}}">Download ({{item.size}})</a></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3>How to</h3>
+        <div class="text">
+            <p>In order to execute any of the Chatsome programs follow these steps:</p>
+            <ul>
+                <li>Download the ConnectionProvider.dll</li>
+                <li>Place this file in the same folder as your Chatsome programs are going to be placed</li>
+            </ul>
+            <p>To get started follow these few steps:</p>
+            <ul>
+                <li>Download the Chatsome.exe</li>
+                <li>Execute the Chatsome.exe</li>
+                <li>Enter the IP-Adress or Computername of the host</li>
+                <li>Press 'Connect'</li>
+                <li>Chat with your friends!</li>
+            </ul>
+            <p>In case you want to host a Chatsome-Server follow these steps:
+            <ul>
+                <li>Download the Chatsome_server_host.exe</li>
+                <li>Execute the Chatsome_server_host.exe</li>
+                <li>Press 'Host'</li>
+                <li>Now your friends can connect!</li>
+            </ul>
+        </div>
+    </div>
+</div>

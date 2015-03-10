@@ -1,0 +1,10 @@
+<h2>My Music</h2>
+<div class="center">
+    <input ng-model="vm.search" placeholder="Search song..." ng-keypress="vm.onKeyPress($event)">
+    <div class="item" ng-repeat="song in vm.my_songs"
+         ng-show="song.title.toLowerCase().indexOf(vm.search.toLowerCase()) > -1">
+
+        <div ng-include="src='audio-player/audio-player.html'"></div>
+
+    </div>
+</div>

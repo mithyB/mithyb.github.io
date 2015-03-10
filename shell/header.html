@@ -1,0 +1,23 @@
+<img class="hidden-xs topleft_ico" src="/" ng-src="{{vm.img}}" alt="MB" />
+
+<!-- CHRISTMAS HTML
+<img class="topleft_ico overlay" src="/" data-ng-src="{{christmasImg}}" alt="MB" />
+<!-- END CHRISTMAS HTML -->
+
+<a class="nodeco" href="#/"><h1>Michael Buholzer</h1></a>
+<p></p>
+<h4 id="headerSubtitle"><script>getRandomText();</script></h4>
+
+<ul class="navbar">
+    <li class="topleft_text">
+        <span class="hidden-xs" ng-class="vm.titleClass">{{vm.title}}</span>
+        <span class="hidden-sm hidden-md hidden-lg mobile" ng-class="vm.titleClass">
+            <img class="topleft_text_ico" src="/" ng-src="{{vm.img}}" alt="MB" />
+        </span>
+    </li>
+    <li ng-repeat="topic in vm.topics" class="navbar-item">
+        <a href="/" ng-href="{{topic.url}}" title="{{topic.title}}">
+            <img ng-src="{{topic.img}}" />
+        </a>
+    </li>
+</ul>

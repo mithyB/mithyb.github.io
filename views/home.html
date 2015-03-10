@@ -1,0 +1,24 @@
+<div>
+    <h2>Introduction</h2>
+    <img class="hidden-xs right" src="images/pic.jpg" alt="coffee" />
+    <div class="text">
+        <p>Hello visitor,</p>
+        <p>
+            Welcome to my webpage. I'm Michael Buholzer, the creator. As you can see I work as a programmer and like to play video games. In the programming topic you can see some of my works and find some good links which might be useful for you. The gaming topic is all about gaming news and game recommendations. <br/><br/>There is also a 'Contact' link at the bottom for giving feedback. Don't be afraid of clicking it :)
+        </p>
+    </div>
+</div>
+<div>
+    <h2>Topics</h2>
+    <div class="center">
+        <a data-ng-repeat="topic in vm.topics" class="nodeco" data-ng-href="{{topic.url}}">
+            <div class="tile">
+                <div class="imageBox">
+                    <div class="desc slideIn-bottom">{{topic.desc}}</div>
+                    <img class="thumbnail" src="#" data-ng-src="{{topic.img}}" alt="thumbnail" />
+                </div>
+                <p class="title">{{topic.title}}</p>
+            </div>
+        </a>
+    </div>
+</div>

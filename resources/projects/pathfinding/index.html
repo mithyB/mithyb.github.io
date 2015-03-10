@@ -1,0 +1,52 @@
+<div>
+    <h2>Pathfinding</h2>
+
+    <div id="playground"></div>
+    <script type="text/javascript">
+        var canvas = document.createElement('canvas');
+        canvas.id = 'canvas';
+        var div = document.getElementById('playground');
+        div.appendChild(canvas);
+        var ctx = canvas.getContext('2d');
+    </script>
+
+    <script type="text/javascript" src="resources/projects/pathfinding/pathfinding.js"></script>
+    <script type="text/javascript" src="resources/projects/pathfinding/main.js"></script>
+
+    <form id="inputs">
+        <div>
+            <a class="button" href="javascript:;" onclick="startPathfinding()">Find path</a>
+        </div>
+        <div>
+            <h3>Settings</h3>
+            <table class="settings">
+                <tr>
+                    <th>Name</th><th>Value</th>
+                </tr>
+                <tr>
+                    <td><label for="gridSize">Grid size:</label></td>
+                    <td><input type="number" id="gridSize" value="16" /></td>
+                </tr>
+                <tr>
+                    <td><label for="size">Tile size:</label></td>
+                    <td><input type="number" id="size" value="8" /></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <a class="button" href="javascript:;" onclick="applyInput()">Apply</a>
+        </div>
+    </form>
+    <div>
+        <h3>How to</h3>
+        <div class="text">
+            <ul>
+                <li>Drag the green tile (start) to your desired location</li>
+                <li>Drag the red tile (end) to your desired location</li>
+                <li>Place obstacles by clicking on white tiles</li>
+                <li>Remove obstacles by clicking on black tiles</li>
+                <li>Start pathfinding by pressing the button</li>
+            </ul>
+        </div>
+    </div>
+</div>

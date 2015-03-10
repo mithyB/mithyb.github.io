@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Programming",
+        "desc": "C, C#, JavaScript, Tutorials",
+        "url": "#/programming",
+        "img": "images/programming.jpg"
+    },
+    {
+        "title": "Gaming",
+        "desc": "News, Reviews, Tutorials",
+        "url": "#/gaming",
+        "img": "images/gaming.jpg"
+    },
+    {
+        "title": "Music",
+        "desc": "Playlists, Original Soundtracks, Compositions",
+        "url": "#/music",
+        "img": "images/music.jpg"
+    }
+]
