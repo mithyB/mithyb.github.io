@@ -1,8 +1,11 @@
 <div>
     <script type="text/javascript">
         function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+
+            obj.style.height = obj.contentWindow.document.lastChild.scrollHeight + 'px';
             obj.style.width = '100%';
+
+            console.log(obj.contentWindow);
         }
     </script>
 
@@ -11,11 +14,17 @@
 
     <div>
         <h3>Controls</h3>
-        <p>
+        <p class="hidden-xs">
             &#8678; = Move left<br />
             &#8680; = Move right<br />
             &#8679; = Rotate (clockwise)<br />
             &#8681; = Faster
+        </p>
+        <p class="hidden-sm hidden-md hidden-lg">
+            Swipe left = Move left<br />
+            Swipe right = Move right<br />
+            Tap = Rotate (clockwise)<br />
+            Swipe down = Faster
         </p>
     </div>
 </div>

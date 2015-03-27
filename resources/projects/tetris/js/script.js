@@ -176,6 +176,7 @@ function updateMap(milliseconds) {
 			setBlock(currentBlock);
 			checkLines();
 			addBlock();
+            fasterDown = 1;
 		}
 		prevTime = new Date();
 	}
@@ -326,6 +327,9 @@ function drawNext(data) {
 
 function rotateBlock(block) {
 	var originalData = block.data;
+    var originalX = block.x;
+    var originalY = block.y;
+
 	block.data = rotateMatrix(block.data, -90);
 	
 	block.x += Math.floor(block.data.length / 2) - Math.floor(block.data[0].length / 2);
@@ -333,6 +337,8 @@ function rotateBlock(block) {
 	
 	if (doesOverlap(block) || block.x + block.data[0].length > mapWidth || block.x < 0) {
 		block.data = originalData;
+        block.x = originalX;
+        block.y = originalY ;
 	}
 }
 
