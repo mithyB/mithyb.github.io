@@ -11,12 +11,9 @@
         var vm = this;
 
         $rootScope.$on('page_load', function(l, param) {
-            vm.img = param.img;
-            vm.title = param.title;
-            vm.titleClass = param.titleClass;
+            vm.pageParam = param;
         });
 
-        vm.img = 'images/blank.png';
         vm.christmasImg = 'images/christmas.png';
 
         $.getJSON(JSON_TOPICS).then(success, failed);

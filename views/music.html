@@ -4,7 +4,8 @@
     <div class="item" ng-repeat="song in vm.my_songs"
          ng-show="song.title.toLowerCase().indexOf(vm.search.toLowerCase()) > -1">
 
-        <div ng-include="src='audio-player/audio-player.html'"></div>
+        <!--<div ng-include="src='audio-player/audio-player.html'"></div>-->
+        <audio-player audio="song"></audio-player>
 
     </div>
 </div>

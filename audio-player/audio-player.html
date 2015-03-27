@@ -1,13 +1,14 @@
 <!--
     Michael Buholzer
-    2014
+    2015
 -->
 
-<div class="audio-player" data-audiosrc="{{song.source}}">
-    <img class="audio-player-cover" src="#" ng-src="{{song.cover}}" alt="cover" />
+<div class="audio-player" data-audiosrc="{{audio.source}}">
+    <img class="audio-player-cover" src="#" ng-src="{{audio.cover}}" alt="cover" />
     <div>
-        <span class="audio-player-prefix">{{$index + 1}}.</span><span class="audio-player-title">{{song.title}}</span>
-        <span class="audio-player-artist">Michael Buholzer</span>
+        <!--<span class="audio-player-prefix">{{$index + 1}}.</span>-->
+        <span class="audio-player-title">{{audio.title}}</span>
+        <span class="audio-player-artist">{{audio.artist}}</span>
     </div>
     <div>
         <span class="audio-player-time"></span>

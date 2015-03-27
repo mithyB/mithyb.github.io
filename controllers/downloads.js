@@ -3,11 +3,15 @@
 
     ng.module(moduleId).controller(controllerId, [
         'dataService',
+        '$rootScope',
+        '$route',
         controller
     ]);
 
-    function controller(dataService) {
+    function controller(dataService, $rootScope, $route) {
         var vm = this;
+
+        $rootScope.$emit('page_load', $route.current.locals);
 
         dataService.getDownloads().then(success, failed);
 

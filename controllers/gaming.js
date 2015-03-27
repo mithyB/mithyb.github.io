@@ -4,17 +4,14 @@
     ng.module(moduleId).controller(controllerId, [
         '$scope',
         '$rootScope',
+        '$route',
         controller
     ]);
 
-    function controller($scope, $rootScope) {
+    function controller($scope, $rootScope, $route) {
         var vm = this;
 
-        $rootScope.$emit('page_load', {
-            img: 'images/gaming.jpg',
-            title: 'Gaming',
-            titleClass: 'gaming'
-        });
+        $rootScope.$emit('page_load', $route.current.locals);
 
         var getGamingNews = function() {
 

@@ -3,6 +3,26 @@
     2014
 */
 
+(function(moduleId, directiveId, ng) {
+    'use strict';
+
+    ng.module(moduleId,[]).directive(directiveId, directive);
+
+    function directive() {
+
+        setTimeout(initAudioPlayers, 500);
+
+        return {
+            scope: {
+                audio: '=audio'
+            },
+            restrict: 'E',
+            templateUrl: 'audio-player/audio-player.html'
+        }
+    }
+
+})('audio-player', 'audioPlayer', angular);
+
 function initAudioPlayers() {
 	$(".audio-player").each(function(i, el) {
 		var audioPlayer = new AudioPlayer(el);
@@ -92,7 +112,9 @@ AudioPlayer.prototype.setElement = function(el) {
 	};
 	this.audio.onwaiting = function() {
 		console.log('waiting...');
-	}
+	};
+
+    //this.audio.load();
 };
 
 AudioPlayer.prototype.setTimeDisplay = function(td) {
@@ -119,7 +141,9 @@ AudioPlayer.prototype.pauseplay = function() {
 
 	if (this.audio.paused) {
         for (var i = 0; i < AudioPlayer.audioPlayers.length; i++) {
-            AudioPlayer.audioPlayers[i].stop();
+            if (AudioPlayer.audioPlayers[i] != this) {
+                AudioPlayer.audioPlayers[i].stop();
+            }
         }
 
 		return this.audio.play();
@@ -134,7 +158,7 @@ AudioPlayer.prototype.stop = function() {
 };
 
 AudioPlayer.prototype.skip = function(percent) {
-	this.audio.currentTime = percent * this.audio.duration;
+    this.audio.currentTime = percent * this.audio.duration;
 };
 
 AudioPlayer.prototype.setVolume = function(percent) {
@@ -159,7 +183,7 @@ AudioPlayer.prototype.getTime = function() {
 
 function doubleToTime(d) {
 	var seconds = pad(d % 60);
-	var mins = pad((d / 60));
+	var mins = pad(d / 60);
 	
 	return mins + ':' + seconds;
 }

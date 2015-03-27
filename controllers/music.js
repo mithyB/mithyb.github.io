@@ -12,11 +12,7 @@
     function controller($location, $route, $scope, $rootScope) {
         var vm = this;
 
-        $rootScope.$emit('page_load', {
-            img: 'images/music.jpg',
-            title: 'Music',
-            titleClass: 'music'
-        });
+        $rootScope.$emit('page_load', $route.current.locals);
 
         vm.onKeyPress = function(e) {
             if (e.keyCode == 13) {
@@ -35,7 +31,6 @@
             function success (result) {
                 vm.my_songs = result;
                 $scope.$apply();
-                setTimeout(initAudioPlayers, 100);
             }
 
             function failed(error) {

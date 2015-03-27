@@ -15,18 +15,22 @@
 }
 
 .audio-player-title {
-	margin: 0 10px;
 	line-height: 10px;
 }
 
 .audio-player-artist {
 	color: #aaa;
-	margin: 0 10px;
+}
+
+.audio-player-artist:before {
+    margin: 0 10px;
+    content: "-"
 }
 
 .audio-player-prefix {
 	font-size: 0.8em;
 	color: #aaa;
+    margin-right: 10px;
 }
 
 .audio-player-time {

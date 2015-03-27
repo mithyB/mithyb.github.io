@@ -3,6 +3,7 @@
 
     var app = ng.module(moduleId, [
         'ngRoute',
+        'audio-player',
         module
     ]);
 

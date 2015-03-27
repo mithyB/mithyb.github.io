@@ -4,11 +4,15 @@
     ng.module(moduleId).controller(controllerId, [
         '$routeParams',
         '$scope',
+        '$rootScope',
+        '$route',
         controller
     ]);
 
-    function controller($routeParams, $scope) {
+    function controller($routeParams, $scope, $rootScope, $route) {
         var vm = this;
+
+        $rootScope.$emit('page_load', $route.current.locals);
 
         vm.projId = $routeParams.project;
         vm.projFile = 'resources/projects/' + vm.projId + '/index.html';

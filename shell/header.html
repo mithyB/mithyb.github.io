@@ -1,4 +1,4 @@
-<img class="hidden-xs topleft_ico" src="/" ng-src="{{vm.img}}" alt="MB" />
+<img class="hidden-xs topleft_ico" src="/" ng-src="{{vm.pageParam.img}}" alt="MB" />
 
 <!-- CHRISTMAS HTML
 <img class="topleft_ico overlay" src="/" data-ng-src="{{christmasImg}}" alt="MB" />
@@ -10,9 +10,9 @@
 
 <ul class="navbar">
     <li class="topleft_text">
-        <span class="hidden-xs" ng-class="vm.titleClass">{{vm.title}}</span>
-        <span class="hidden-sm hidden-md hidden-lg mobile" ng-class="vm.titleClass">
-            <img class="topleft_text_ico" src="/" ng-src="{{vm.img}}" alt="MB" />
+        <span class="hidden-xs" ng-class="vm.pageParam.titleClass">{{vm.pageParam.title}}</span>
+        <span class="hidden-sm hidden-md hidden-lg mobile" ng-class="vm.pageParam.titleClass">
+            <img class="topleft_text_ico" src="/" ng-src="{{vm.pageParam.img}}" alt="MB" />
         </span>
     </li>
     <li ng-repeat="topic in vm.topics" class="navbar-item">
