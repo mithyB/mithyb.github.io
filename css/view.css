@@ -1,3 +1,10 @@
+.thumbnail {
+    padding: 0;
+    margin-bottom: 0;
+    border: 0 none transparent;
+    border-radius: 0;
+}
+
 /* ***** TILE ***** */
 div.tile {
 	background: #ccc;
@@ -40,6 +47,7 @@ div.rect {
 	text-align: left;
 	display: inline-block;
 	margin: 5px;
+    width: 100%;
 }
 
 div.rect .title {
@@ -74,8 +82,8 @@ div.rect .desc {
 }
 
 div.rect .thumbnail {
-	height: 120px;
-	width: 360px;
+    min-height: 100%;
+    min-width: 100%;
 	background: white;
 	display: block;
 }

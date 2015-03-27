@@ -1,0 +1,21 @@
+<div>
+    <script type="text/javascript">
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+            obj.style.width = '100%';
+        }
+    </script>
+
+    <h2>Tetris</h2>
+    <iframe onload="javascript:resizeIframe(this)" src="resources/projects/tetris/base.html"></iframe>
+
+    <div>
+        <h3>Controls</h3>
+        <p>
+            &#8678; = Move left<br />
+            &#8680; = Move right<br />
+            &#8679; = Rotate (clockwise)<br />
+            &#8681; = Faster
+        </p>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<title>Tetris</title>
+		<meta charset="utf-8" />
+
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="js/arrayrotation.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+		<script>			
+			window.addEventListener("keydown", function(e) {
+				// space and arrow keys
+				if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+					e.preventDefault();
+				}
+			}, false);
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<canvas id="canvas"></canvas>
+			<div id="overlay">
+				<div class="content">
+					<h3 id="overlayMessage"></h3>
+					<h4><a id="overlayAction">Go!</a></h4>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar">
+			<p>
+				Score: <span id="score">0</span><br/>
+				Time: <span id="time">0.00s</span><br/>
+				Speed: <span id="speed">1.00x</span>
+			</p>
+			<br />
+			<p>
+				Next:<br />
+				<canvas id="cvNext"></canvas>
+				<br />
+			</p>
+		</div>
+
+		<script>
+			var ctx = document.getElementById('canvas').getContext('2d');
+			var ctxNext = document.getElementById('cvNext').getContext('2d');
+			init();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<div>
+    <h2>Projects</h2>
+    <div class="center">
+        <a ng-repeat="proj in vm.projs" class="nodeco" ng-href="{{proj.url}}">
+            <div class="detail">
+                <div class="thumbnail category-thumbnail {{proj.category}}"></div>
+                <!--<img class="thumbnail" src="#" data-ng-src="{{proj.img}}" alt="thumbnail" />-->
+                <p class="title">{{proj.title}}</p>
+                <p class="desc">{{proj.desc}}</p>
+            </div>
+        </a>
+    </div>
+</div>
+<div>
+    <h2>Links</h2>
+    <div class="text">
+        <p>Here are some useful links:</p>
+        <ul>
+            <li ng-repeat="link in vm.links">{{link.title}} (<a ng-href="{{link.url}}">{{link.displayUrl}}</a>)</li>
+        </ul>
+    </div>
+</div>

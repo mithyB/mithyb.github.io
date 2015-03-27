@@ -1,0 +1,24 @@
+<div>
+    <h2>News</h2>
+    <div class="text">
+        <div ng-repeat="news in vm.gamingNews" class="item">
+            <p class="title">{{news.title}}<span class="desc" style="float:right">{{news.date | ago}}</span></p>
+            <img class="thumbnail" src="#" ng-src="{{news.img}}" alt="thumbnail" />
+            <p class="desc">{{news.desc}} <a ng-href="{{news.url}}">More...</a> <span class="desc">({{news.url_desc}})</span></p>
+        </div>
+        <p><em>- provided by <a href="http://reddit.com/r/Games">reddit.com/r/Games</a></em></p>
+    </div>
+    <h2>Recommended Games Of The Month</h2>
+    <p>{{vm.text}}</p>
+    <div class="center middle">
+        <a ng-repeat="game in vm.games" class="nodeco" ng-href="{{game.url}}">
+            <div class="rect">
+                <div class="imageBox">
+                    <div class="desc slideIn-right">{{game.desc}}</div>
+                    <img class="thumbnail" src="#" ng-src="{{game.img}}" alt="thumbnail" />
+                </div>
+                <span class="title">{{game.title}}</span><span class="rating">{{game.rating}}</span>
+            </div>
+        </a>
+    </div>
+</div>

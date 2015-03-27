@@ -1,0 +1,33 @@
+<!--
+    Michael Buholzer
+    2015
+-->
+
+<div class="audio-player" data-audiosrc="{{audio.source}}">
+    <img class="audio-player-cover" src="#" ng-src="{{audio.cover}}" alt="cover" />
+    <div>
+        <!--<span class="audio-player-prefix">{{$index + 1}}.</span>-->
+        <span class="audio-player-title">{{audio.title}}</span>
+        <span class="audio-player-artist">{{audio.artist}}</span>
+    </div>
+    <div>
+        <span class="audio-player-time"></span>
+    </div>
+    <div class="audio-player-controls">
+        <span class="audio-player-progress">
+            <span class="audio-player-progress-bar"></span>
+        </span>
+        <span class="audio-player-button-wrappers">
+            <!--<a role="button" class="audio-player-button icon-backward"></a>-->
+            <a role="button" class="audio-player-button button-left audio-player-pauseplay-button fa fa-play"></a>
+            <a role="button" class="audio-player-button button-left audio-player-stop-button fa fa-stop"></a>
+            <!--<a role="button" class="audio-player-button icon-forward"></a>-->
+            <span class="audio-player-volume-wrapper">
+                <span class="audio-player-volume">
+                    <span class="audio-player-volume-bar"></span>
+                </span>
+            </span>
+            <a role="button" class="audio-player-button button-right audio-player-mute-button fa fa-volume-up"></a>
+        </span>
+    </div>
+</div>

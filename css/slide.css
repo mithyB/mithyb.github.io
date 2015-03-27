@@ -3,6 +3,7 @@
 .imageBox {
     position: relative;
     overflow: hidden;
+    height: 120px;
 }
 
 .imageBox .slideIn-bottom {

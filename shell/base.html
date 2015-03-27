@@ -1,0 +1,14 @@
+<div ng-controller="base as vm" class="max-height">
+    <div id="wrap">
+        <header ng-include="src='shell/header.html'"></header>
+
+        <div class="container" id="content">
+
+            <div ng-view></div>
+
+        </div>
+        <div id="push"></div>
+    </div>
+
+    <footer ng-include="src='shell/footer.html'"></footer>
+</div>
